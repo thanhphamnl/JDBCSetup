@@ -13,9 +13,17 @@
     <servlet-name>ProductDetails</servlet-name>
     <servlet-class>ProductDetails</servlet-class>
   </servlet>
+  <servlet>
+  <servlet-name>ProductDetailStoreProcedure</servlet-name>
+  <servlet-class>ProductDetailStoreProcedure</servlet-class>
+</servlet>
   <servlet-mapping>
     <servlet-name>ProductDetails</servlet-name>
     <url-pattern>/list</url-pattern>
-  </servlet-mapping>  
+  </servlet-mapping>
+  <servlet-mapping>
+  <servlet-name>ProductDetailStoreProcedure</servlet-name>
+  <url-pattern>/listsp/*</url-pattern>
+</servlet-mapping>  
 </web-app>
 
