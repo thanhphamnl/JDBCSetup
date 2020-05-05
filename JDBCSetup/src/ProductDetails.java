@@ -62,11 +62,14 @@ public class ProductDetails extends HttpServlet {
 			conn.closeConnection();
 
 		} catch (ClassNotFoundException e) {
-			e.printStackTrace();
+			//e.printStackTrace();
+			System.out.println("SQLException: " + e.getMessage());
 		} catch (SQLException e) {
-			e.printStackTrace();
+			//e.printStackTrace();
+			System.out.println("SQLException: " + e.getMessage());
+		    System.out.println("SQLState: " + e.getSQLState());
+		    System.out.println("VendorError: " + e.getErrorCode());
 		}
-
 	}
 
 	/**
